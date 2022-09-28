@@ -16,8 +16,11 @@
     }
 
     html {
-      --background-color: #fff;
-      --primary-text-color: black;
+      --white-color: #fff;
+      --black-color: #1b1b1b;
+
+      --background-color: var(--white-color);
+      --primary-text-color: var(--black-color);
 
       background-color: var(--background-color);
       color: var(--primary-text-color);
@@ -25,8 +28,8 @@
 
     @media (prefers-color-scheme: dark) {
       html {
-        --background-color: #1b1b1b;
-        --primary-text-color: #fff;
+        --background-color: var(--black-color);
+        --primary-text-color: var(--white-color);
       }
     }
 
